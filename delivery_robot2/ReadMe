@@ -1,0 +1,21 @@
+Robotic delivery order management and control system based on ROS (Robot Operating System). 
+
+Order_Manager.py (Order Management)
+Purpose: To coordinate and manage delivery orders.
+Functionality: Receives new order requests, validates them, assigns priorities, and publishes them on a ROS topic to be processed by other nodes.
+
+Robot_Controller.py (Robot Control)
+Purpose: To control a robot that physically executes the delivery orders.
+Functionality: Receives orders published by the Order_Manager, manages the queue based on priority, and handles navigation to the destination.
+It includes the management of visual markers in RViz to graphically represent the robot's position and path.
+
+Navigation.py (Robotic Navigation)
+Purpose: To handle the actual robot navigation towards a specified point.
+Functionality: Gradually moves the robot from its current position to the specified destination, continuously updating the position and visualizing the path.
+
+System Objective:
+The primary goal of this system is to automate and optimize the management of robotic delivery orders.
+Efficiency: Manages multiple orders simultaneously by prioritizing them.
+Automation: Reduces human intervention for delivery management.
+Safety and Control: Validates orders before execution and prevents duplicates or destination errors.
+Visualization: Provides a visual interface through RViz to monitor the robot's status and path.

@@ -1,0 +1,3 @@
+---
+delivery_robot2/DeliveryOrder[] pending_orders
+string[] completed_orders

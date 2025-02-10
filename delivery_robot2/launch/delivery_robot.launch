@@ -1,0 +1,5 @@
+<launch>
+    <rosparam file="$(find delivery_robot2)/config/params.yaml" command="load"/>
+    <node pkg="delivery_robot2" type="order_manager.py" name="order_manager" output="screen" />
+    <node pkg="delivery_robot2" type="robot_controller.py" name="robot_controller" output="screen" />
+</launch>

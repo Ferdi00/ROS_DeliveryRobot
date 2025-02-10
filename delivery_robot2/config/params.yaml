@@ -1,0 +1,20 @@
+predefined_points:
+    point1: [-5.0, 3.2]
+    point2: [7.0, -2.0]
+    point3: [3.0, 6.5]
+
+test_orders:
+    - order_id: 1
+      start_location: "current"
+      destination: "point1"
+      priority: "high"
+    - order_id: 2
+      start_location: "point1"
+      destination: "point3"
+      priority: "low"
+    - order_id: 3
+      start_location: "point1"
+      destination: "point2"
+      priority: "medium"
+
+
